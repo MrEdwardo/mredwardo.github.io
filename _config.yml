@@ -1,8 +1,8 @@
 # Site settings
-title: Product Salad
+title: The UX Report
 email: edshelley@gmail.com
 url: https://mredwardo.github.io
-description: "Get a comprehensive review of your company's product UX, from an experienced product expert."
+description: "Get a comprehensive review of your product's UX, from an experienced product expert."
 
 # Contact form: comment the line below if you want to stick with the default PHP contact form
 contact: static

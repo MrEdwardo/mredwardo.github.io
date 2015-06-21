@@ -2,18 +2,12 @@
 <html>
     {% include head.html %}
     <body id="page-top" class="index">
-    {% include nav.html %}
+
     {% include header.html %}
     {% include overview.html %}
     {% include features.html %}
-    {% include tiers.html %}
     {% include about.html %}
-
-    {% if site.contact == "static" %}
-    {% include contact_static.html %}
-    {% else %}
-    {% include contact.html %}
-    {% endif %}
+    {% include tiers.html %}
 
     {% include footer.html %}
     {% include modals.html %}

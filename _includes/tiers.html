@@ -4,12 +4,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Choose your service</h2>
+                    <h2>Choose Your Package</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
-                {% for post in site.categories.result %}
+                <div class="col-lg-12 text-center">
+                    <p>Whether you just want the UX Report delivered to you electronically, or you'd like to take things further with discussion and in-depth consultation, you can choose the package that makes sense for your business.<br/><br/></p>
+                </div>
+            </div>
+            <div class="row">
+                {% for post in site.categories.tiers %}
                     <div class="col-sm-4 portfolio-item">
                         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
@@ -21,6 +26,14 @@
                         </a>
                     </div>
                 {% endfor %}
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <a href="#" class="btn btn-lg btn-outline dark">
+                    Get your report
+                </a>&nbsp;&nbsp;
+                <a href="#" class="btn btn-lg btn-outline dark">
+                    <i class="fa fa-download"></i> Download example PDF
+                </a>
             </div>
         </div>
     </section>
