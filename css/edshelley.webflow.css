@@ -1225,6 +1225,55 @@ a {
   font-style: italic;
 }
 
+.utility-page-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.utility-page-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.utility-page-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
 html.w-mod-js *[data-ix="fade-in-bottom-page-loads"] {
   opacity: 0;
   -webkit-transform: translate(0px, 50px);
@@ -1306,6 +1355,9 @@ html.w-mod-js *[data-ix="fade-in"] {
   .blog-content {
     width: 75%;
   }
+  .blog-name {
+    font-size: 120px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1328,6 +1380,10 @@ html.w-mod-js *[data-ix="fade-in"] {
   .blog-content {
     width: 80%;
   }
+  .blog-name {
+    font-size: 90px;
+    letter-spacing: 12px;
+  }
   .link-to-page {
     width: 80%;
   }
@@ -1341,11 +1397,19 @@ html.w-mod-js *[data-ix="fade-in"] {
 }
 
 @media (max-width: 479px) {
+  .navigation-bar {
+    padding-right: 0px;
+  }
   .blog-content {
     width: 90%;
   }
   .blog-post {
     margin-bottom: 54px;
+  }
+  .blog-name {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 0px;
   }
   .link-to-page {
     width: 90%;
@@ -1355,6 +1419,13 @@ html.w-mod-js *[data-ix="fade-in"] {
   }
   .post-heading {
     font-size: 24px;
+  }
+  .slider {
+    display: none;
+    overflow: visible;
+  }
+  .heading-2 {
+    line-height: 60px;
   }
 }
 
