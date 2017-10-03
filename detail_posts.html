@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Tue Oct 03 2017 18:15:17 GMT+0000 (UTC)  -->
-<html data-wf-page="5932e353b80c025dd901a864" data-wf-site="5932e352b80c025dd901a859">
+<html data-wf-page="5932e353b80c025dd901a867" data-wf-site="5932e352b80c025dd901a859">
 <head>
   <meta charset="utf-8">
-  <title>Categories</title>
+  <title>{{name}} | Blog</title>
+  <meta content="{{post-summary}}" name="description">
+  <meta content="{{name}}" property="og:title">
+  <meta content="{{post-summary}}" property="og:description">
+  <meta content="{{main-image.url}}" property="og:image">
+  <meta content="summary" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -30,28 +35,15 @@
     </div>
   </div>
   <div class="content-wrapper">
-    <div>
-      <h1 class="white-bg-heading"></h1>
-    </div>
-    <div class="w-dyn-list">
-      <div class="w-dyn-items">
-        <div class="w-dyn-item">
-          <div class="post-wrapper"><a class="blog-image w-inline-block"></a>
-            <div class="post-content">
-              <a class="blog-title-link w-inline-block">
-                <h1 class="blog-title"></h1>
-              </a>
-              <div class="post-summary-wrapper">
-                <p class="post-summary"></p><a class="read-more-link">Read more...</a></div>
-              <div class="post-info-wrapper">
-                <div class="post-info"></div>
-                <div class="post-info">|</div><a class="link post-info"></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="success-message w-dyn-empty white-background">
-        <p class="success-text">No items found.</p>
+    <div class="post-wrapper">
+      <div class="blog-image blog-page"></div>
+      <div class="post-content">
+        <h1 class="blog-title"></h1>
+        <div>
+          <div class="post-info"></div>
+          <div class="post-info">|</div><a class="link post-info"></a></div>
+        <div class="grey-rule"></div>
+        <div class="body-copy w-richtext"></div>
       </div>
     </div>
     <div class="button-wrapper"><a href="/all-posts" class="button w-button">← All posts </a></div>
