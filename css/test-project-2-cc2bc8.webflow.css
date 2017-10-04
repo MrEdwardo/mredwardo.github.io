@@ -268,6 +268,10 @@ figcaption {
   text-decoration: none;
 }
 
+.site-name.w--current {
+  margin-bottom: 20px;
+}
+
 .site-description {
   color: #aaa;
   line-height: 145%;
